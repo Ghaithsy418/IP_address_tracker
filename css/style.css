@@ -1,0 +1,174 @@
+/* --- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+
+-Line heights
+Default: 1
+
+--- 02 COLORS 
+
+Primary: 
+
+Tints: 
+Shades: 
+Accents:
+Greys:
+
+--- 05 SHADOWS
+
+--- 06 BORDER-READIUS
+
+--- 07 WHITESPACE
+
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128  */
+
+:root{
+    --color-very-dark-gray: hsl(0,0%,17%);
+    --color-dark-gray: hsl(0,0%,59%);
+    --color-snow-white: #FFFAFA;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'),auto;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-part{
+    background-image: url(../images/pattern-bg-desktop.png);
+    background-size: cover;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.title{
+    margin-top: 6rem;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--color-snow-white);
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+}
+
+.search-field{
+    width: 45rem;
+    padding: 1.2rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: none;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'),pointer;
+}
+
+.search-field:focus{
+    outline: none;
+}
+
+.search-field::placeholder{
+    color: var(--color-dark-gray);
+}
+
+.search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 4.2rem;
+    width: 4.2rem;
+    border: none;
+    transition: all 0.3s;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'),pointer;
+}
+
+.search-btn:hover{
+    background-color: var(--color-very-dark-gray);
+}
+
+.search-field::-webkit-search-cancel-button,
+.search-field::-webkit-search-decoration{
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.map-part{
+    height: 65%;
+}
+
+.ip-part{
+    position: absolute;
+    background-color: var(--color-snow-white);
+    width: 80%;
+    height: 14rem;
+    display: flex;
+    gap: 4.8rem;
+    align-items: center;
+    justify-content: space-around;
+    transform: translate(0,20rem);
+    border-radius: 12px;
+    /* background-color: antiquewhite; */
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.4);
+    padding-right: 4.8rem;
+    z-index: 10;
+}
+
+.div{
+    border-left: 1px solid var(--color-dark-gray);
+    padding-left: 3.2rem;
+    height: 6rem;
+}
+
+.div:first-child{
+    border-left: none;
+    padding-left: 0;
+}
+
+h2{
+    font-size: 1.2rem;
+    color: var(--color-dark-gray);
+    letter-spacing: 1.6px;
+    margin-bottom: 1.2rem;
+}
+
+p{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-very-dark-gray);
+    transition: all 0.3s;
+}
+
+.map-part{
+    z-index: 1;
+}
+
+.hidden{
+    opacity: 0;
+}

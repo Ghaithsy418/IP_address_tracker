@@ -1,0 +1,57 @@
+@media(max-width: 66.5rem){
+    html{
+        font-size: 50%;
+    }
+
+    .ip-part{
+        transform: translate(0,28rem);
+    }
+}
+
+@media(max-width: 53.8rem){
+    .ip-part{
+        flex-direction: column;
+        gap: 1.6rem;
+        width: 40%;
+        height: 40rem;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+        transform: translate(0,20rem);
+    }
+
+    .div{
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+@media(max-width:36.6rem){
+
+    html{
+        font-size: 40%;
+    }
+
+    .title{
+        margin-bottom: 3.2rem;
+    }
+
+    .ip-part{
+        transform: translate(0,26rem);
+        height: 35rem;
+    }
+}
+
+@media(max-width: 27.9rem){
+    html{
+        font-size: 32%;
+    }
+
+    .title{
+        margin-top: 10rem;
+    }
+
+    .ip-part{
+        transform: translate(0,28rem);
+    }
+}
