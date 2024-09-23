@@ -6,6 +6,10 @@
     .ip-part{
         transform: translate(0,28rem);
     }
+
+    .search-btn{
+        height: 4.6rem;
+    }
 }
 
 @media(max-width: 53.8rem){
@@ -40,6 +44,10 @@
         transform: translate(0,26rem);
         height: 35rem;
     }
+
+    .search-btn{
+        height: 5rem;
+    }
 }
 
 @media(max-width: 27.9rem){
@@ -61,5 +69,14 @@
 
     h2{
         font-size: 1rem;
+    }
+
+    .search-field::placeholder{
+        font-size: 2.4rem;
+    }
+
+    .search-btn{
+        height: 5.6rem;
+        width: 4.8rem;
     }
 }
