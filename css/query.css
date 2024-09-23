@@ -54,4 +54,12 @@
     .ip-part{
         transform: translate(0,28rem);
     }
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
 }
